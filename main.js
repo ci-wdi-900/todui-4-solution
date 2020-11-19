@@ -39,7 +39,7 @@ const displayTodos = function() {
 const displayTodosAlt1 = function() {
   console.log('\nHere are your current todos:\n')
   for (let i = 0; i < todos.length; i++) {
-    console.log(i + 1 + '. ' + todos[i].text + ' ' + (todo.isComplete ? '✅' : '✖'));
+    console.log(i + 1 + '. ' + todos[i].text + ' ' + (todo[i].isComplete ? '✅' : '✖'));
   }
 }
 
