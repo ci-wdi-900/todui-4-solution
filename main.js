@@ -129,6 +129,14 @@ const removeCompletedTodos = function() {
   displayMenu();
 }
 
+// or with a nifty one-line arrow function
+const removeCompletedTodosAlt = function() {
+  todos = todos.filter((todo) => todo.isComplete === false);
+
+  displayTodos();
+  displayMenu();
+}
+
 const handleMenu = function(cmd) {
   if (cmd === '1') {
     interface.question('\nWhat should go on your list? ', add)
