@@ -8,7 +8,8 @@ const interface = readline.createInterface({
   output: process.stdout
 })
 
-const menu = `
+const displayMenu = function() {
+  const menu = `
 Your options are:
 
 1. Add a todo.
@@ -20,7 +21,6 @@ Your options are:
 
 `
 
-const displayMenu = function() {
   interface.question(menu, handleMenu);
 }
 
